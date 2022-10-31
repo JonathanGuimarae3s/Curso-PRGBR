@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    background-color: brown;
+}
+div {
+   
+    text-align: center;
+}
+a{
+    
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: aqua;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+/* a:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+    transition: 2s;
+    cursor: pointer;
+} */
+a:active{
+    background-color: rgba(0, 0, 0, 0.575);
+    color: white;
+ 
+    cursor: pointer;
+}
+ul{
+    list-style-type:  lower-greek;
+    background-color: brown;
+    list-style-position: inside;
+    margin: 0;
+    padding:10px;
+    background-color: yellow;
+
+
+}
+ol{
+    list-style-type: upper-roman;
+    
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+    background-color: blue;
+}  
+li{
+    border: 1px solid;
+    background-color: red;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+

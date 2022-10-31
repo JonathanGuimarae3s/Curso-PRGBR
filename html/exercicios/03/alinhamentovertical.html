@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        *{
+            font-size: 1.2rem;
+        }
+        .card{
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 200px;
+            border: 2px solid black; 
+            text-align: center;
+
+        } 
+        .card2{
+            /* clear: left; nao quero nada flutuando na esquerda */
+            float: left;
+            border: 2px solid black; 
+            padding : 100px 107px;
+        }
+        .c1{
+            /*
+            PRIMEIRA MANEIRA
+
+            centralizando verticalmente com LINE-HEIGHT
+            
+            PARA ISSO É PRECISO SABER A ALTURA DO PAI (.CARD),POIS O LINEHEIGHT NAO TEM NENHUMA EQUIVALENCIA COM O A TAG PAI
+            */
+            background-color:brown;
+            line-height: 200px;
+
+        
+           
+        }
+        .c2{
+
+            /* centralizando horizontalmente com position */
+
+
+            position: absolute;
+            /* como foi usada a declaração position: absolute; é obrigatorio, para alinhar, usar as declarações top e left, pois essa declaração sobrescreveu a declaração  text-align: center; da tag pai */
+
+            top: 50%;/* <--esse valor é referente ao pai(.card) do .C2  */
+            left: 50%;/* <--esse valor é referente ao pai(.card) do .C2  */
+
+            background-color: rebeccapurple;
+            transform: translate(-50%, -50%) /* <-- esse valor é referente ao conteúdo de fato, ao .c2.
+
+            transform: translate(EIXO X, EIXO Y) modifica horizontalmente e verticalmente como numa função */
+        }
+       
+    </style>
+</head>
+<body>
+    
+    
+    <div class="card">
+        <div class="c1"> Jonathan Guimarães</div>
+    </div>
+    
+    <div class="card">
+        <div class="c2"> Jonathan Guimarães</div>
+    </div>
+    <div class="card2">
+        <div > Jonathan Guimarães</div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            height: 300px;
+            width: 460px;
+           
+
+        }
+        .container:hover + .btn{
+           visibility: hidden;
+        }
+        .video{
+           
+            width: 100%;
+        }
+        
+        .controle{
+           overflow: hidden;
+           
+        }
+        .controle:hover{
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            /* background-color: #FFFFFFAA; */
+            text-align: center;
+           overflow: visible;
+           
+        }
+        img{
+            position: relative;
+            width: 30px;
+            padding: 10px;
+            top: 100%;
+            transform: translateY(-200%);
+            
+           
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        
+        <video class="video" src="css/imgs/monkey.mp4"   id="video1"></video>
+        
+        <div class="controle">
+            <img class="btn"src="css/imgs/voltar.png" alt="" onclick="voltar()">
+            <img class="btn"src="css/imgs/avançar.png" alt="" onclick="avancar()">
+            <img class="btn"src="css/imgs/menos.png" alt="" onclick="diminuir_vel()">
+            <img class="btn"src="css/imgs/mais.png" alt="" onclick="aumentar_vel()">
+        
+            <img class="btn" src="css/imgs/play.png" alt="" onclick="play()">
+            <img class="btn"src="css/imgs/stop.png" alt="" onclick="stope()">
+        </div>
+</div> 
+
+<script src="script.js"></script>
+   </body>
+
+</html>

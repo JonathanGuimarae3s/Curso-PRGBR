@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				background-color: black;
+			}
+			#square {
+				width: 300px;
+				height: 300px;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="button">fade out</button>
+
+		<button id="button2">fade in</button>
+		<button id="button3">fade toggle</button>
+		<button id="button4">fade to</button>
+		<button id="button5">slide down</button>
+		<button id="button6">slide toggle</button>
+		<button id="button7">slide up</button>
+		<button id="button8">Animate</button>
+		<button id="stop">stop</button>
+		<div id="square"></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$("#button").click(() => {
+				$("#square").fadeOut("fast");
+			});
+			$("#button2").click(() => {
+				$("#square").fadeIn("slow");
+			});
+			$("#button3").click(() => {
+				$("#square").fadeToggle("slow");
+			});
+			$("#button4").click(() => {
+				$("#square").fadeTo(1000, 0.5);
+			});
+			$("#button5").click(() => {
+				$("#square").slideDown();
+			});
+			$("#button6").click(() => {
+				$("#square").slideToggle("slow");
+			});
+			$("#button7").click(() => {
+				$("#square").slideUp("slow");
+			});$("#button8").click(() => {
+				$("#square").animate({width:400,height:400},500);
+			});
+			$("#stop").click(() => {
+				$("#square").stop();
+			});
+
+		</script>
+	</body>
+</html>

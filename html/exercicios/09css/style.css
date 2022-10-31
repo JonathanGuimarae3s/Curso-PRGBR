@@ -1,0 +1,40 @@
+h1::first-letter {
+	font-size: 4rem;
+	color: blue;
+}
+p::first-letter {
+	color: blueviolet;
+	font-weight: bolder;
+}
+p::first-line {
+	font-family: monospace;
+	font-size: 20px;
+}
+
+li {
+	list-style: none;
+}
+li::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(download.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+li::after {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url(download.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+p::selection {
+	background-color: blueviolet;
+	color: red;
+}

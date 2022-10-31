@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> responsivo</title>
+    <style>
+        body{
+            background-color: blue;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            overflow:hidden;
+            margin: auto;
+            width: 80%;/*80% DA LARGURA DO BODY */
+            background-color: blue;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .menu{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right; /*flutuar no lado direito */
+        }
+        li{
+            
+           display: inline-block;
+            color: white;
+            margin-left: 15px;
+        }
+        .logo{
+            float: left;
+            color:white;
+        }
+        @media screen and (max-width:700px) {
+            body{
+                background-color: red;
+            }
+            .header{
+                background-color: red;
+            }
+        }
+/* max width = abaixo  de  
+    min width = acima de     
+*/
+        @media screen and (max-width: 500px) {
+            /* aqui é o css que vai ser executado somente quando a tela tiver no maximo 400px, entao se tiver algum valor < o valor maximo vai executar o CSS que estiver aqui*/
+            body{
+                background-color: saddlebrown
+            }
+            .header{
+                background-color: saddlebrown;
+            }
+            .logo{
+                float: none;
+                text-align: center;
+
+            }
+            .menu{
+                margin-top: 30px;
+                float: none;
+                text-align: center;
+                
+            }
+            li{
+                margin-bottom: 5px;
+                padding: 10px;
+                float:none;
+                background-color: red;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> 
+            <img src="https://assets.turbologo.com/blog/pt/2019/11/19133547/gaming-logo-cover.jpg" alt="" height="50px">
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Cursos</li>
+            <li>Contatos</li>
+        </ul>
+        
+    </div>   
+    
+</body>
+</html>

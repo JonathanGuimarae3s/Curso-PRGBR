@@ -1,0 +1,62 @@
+@keyframes changeColor {
+	0% {
+		background: red;
+		left: 0px;
+	}
+	50% {
+		background: yellow;
+	}
+	100% {
+		background: blueviolet;
+		left: 100vw;
+	}
+}
+@keyframes body{
+	0% {
+		background: red;
+		
+	}
+	50% {
+		background: yellow;
+	}
+	100% {
+		background: blueviolet;
+		
+	}
+}
+body {
+	height: 70vh;
+	animation-name: body;
+	background-color: blueviolet;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out
+}
+
+.box {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	animation: changeColor 5s linear 0 infinite alternate forwards;
+	animation-name: changeColor;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+.div1 {
+	animation-timing-function: linear;
+}
+.div2 {
+	animation-timing-function: ease;
+}
+.div3 {
+	animation-timing-function: ease-in;
+}
+.div4 {
+	animation-timing-function: ease-out;
+}
+.div5 {
+	animation-timing-function: ease-in-out;
+}

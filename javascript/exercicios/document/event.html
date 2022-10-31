@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+    
+    function x (){
+        var k = document.getElementsByTagName("h1")[0]
+
+        var y = document.getElementsByTagName("p")[0]
+        y.innerText = k.innerHTML
+    }
+
+    function lol(i){
+
+        let h1= document.getElementsByTagName("h1")[1]
+        h1.innerText= i.value;
+
+
+
+
+
+    }
+    
+    function onOver(elemento){
+        elemento.style.backgroundColor =  "blue"
+
+
+       
+    }
+
+
+    function onOut(elemento){
+    elemento.style.backgroundColor = "black"
+    
+    
+    }
+
+    </script>
+
+
+<style>
+    div{
+        padding:20px;
+        font-size: 2rem;
+        background-color: slateblue;
+        color: turquoise;
+        display: inline-block;
+    }
+</style>
+</head>
+
+
+
+
+<body onload="console.log('ok')">
+    <h1 onclick="x()">pao</h1>
+  
+
+    <p></p>
+
+    <h1></h1>
+
+<input oninput="lol(this)" type="text">
+
+
+<div onmouseover="onOver(this)" onmouseout="onOut(this)"> clica </div>
+
+</body>
+</html>

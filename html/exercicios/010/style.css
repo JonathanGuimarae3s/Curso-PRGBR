@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+}
+
+
+.janela{
+    width: calc(100% - 400px);
+    background-color: darkred;
+    height: 400px;
+    margin: auto;
+}

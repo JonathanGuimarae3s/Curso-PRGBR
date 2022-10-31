@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!--
+        
+        GET :  Quando esse método é utilizado os dados do enviados serão enviados no endereço (na URL)
+
+    
+        POST : Quando esse método é utilizado os dados do enviados não serão enviados no endereço (na URL) 
+        
+
+        action : é onde o dominio do servidor ficará 
+        value : serve para por o escrito no form 
+    
+    -->
+    <form method="get" action="https://www.youtube.com/results"> 
+       nome: <input type="text" name="search_query">
+
+        <br>
+
+        senha:<input type="password" name="senha" >
+        <br>
+        curso:<input type="checkbox" name="curso" id="">
+
+        <br>    
+
+        
+        <input type="radio" name="gender" id="" value= "m">Masculino
+        <input type="radio" name="gender" id="" value= "f">Feminino
+        <br>
+
+        <!-- os names iguais impede de selecionar mais que um item -->
+        
+
+    <br>
+        <select name="estado" id="" size="5">
+
+            <!-- 
+                size quantidade de itens que será mostrado
+                
+                
+                name sera enviado para o servidor é o value tbm em conjunto
+            exemplo: estado= RJ 
+            -->
+            <option value="RJ" selected>Rio de Janeiro</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+            <option value="RJ" >Rio de Janeiro</option>
+        </select>       
+        <br><br>
+
+        <input type="text" name="assunto">
+        <br><br>
+
+        <textarea name="sobreoassunto" id="" cols="30" rows="10"></textarea>
+        <br>
+
+        <input type="reset" value="Limpar"> 
+        <input type="submit"  value="verificar">
+
+        <h1>inputs que vieram com o HTML5</h1>
+
+        
+        <input type="color" name="cor" id="cor">
+        <br>
+        <input type="date" name="data" id="data" max="2018-12-15">
+        <br>
+        <input type="datetime-local" name="data hora" id="data hora">
+        <br>
+        <input type="file" name="arquivo" id="arquivo">
+        <br>
+        <input type="number" name="" id="" max="9">
+        <br>
+        <input type="range" name="" id="" min="3" max="9">
+        <!-- esse atributo gera uma barra horizontal que se movimenta de acordo com o valor selecionado
+**com value é possível selecionar um valor inicial -->
+        <br>
+        <input type="email" name="email" id="email">
+
+        <input type="submit"  value="verificar">
+
+
+    </form>
+</body>
+</html>

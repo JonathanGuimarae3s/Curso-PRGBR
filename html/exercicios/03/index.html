@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        img{
+            float: left;
+        }
+
+        /* 
+        float-> a imagem fica flutuando ao lado de algum elemento 
+        
+        clear -> diz que nao quer nenhum objeto flutuando ao lado, acima ou abaixo. se o valor do float e clear forem iguais, o clear elimina o efeito do float de abraçar a imagem
+        
+        clear: both;-> ele elimina o efeito dos lados que tiverem algum elemento flutuando
+        */
+        p{
+            clear: none; /*padrao*/
+            text-align: justify;
+            margin: 1px;
+        }
+        div{
+            border: 1px solid black;
+            overflow: auto;
+        }
+        ul{
+            list-style: none;
+            
+        }
+        li{float: left;
+            padding: 10px;
+            background-color: blue;
+            margin: 5px
+            ;}
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvGhq6tDiTig4z-dGQDRSHJPmm_hnnjt99aN1l71fffWUVRLXGou2lEhdAbJeniCnLh14&usqp=CAU" alt="">
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, dolorum exercitationem? Aliquam cumque, architecto expedita earum, commodi praesentium aperiam ipsa, veritatis eligendi voluptate culpa sunt saepe odio exercitationem natus labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur sit ducimus, ab quo asperiores recusandae, amet delectus nihil accusamus soluta a ipsum distinctio veniam ratione sint neque explicabo unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores esse non laboriosam, doloremque ullam. Impedit, distinctio quisquam possimus modi iusto tempora quae doloremque ex reiciendis saepe incidunt voluptas. Reprehenderit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae officiis eos ad a laudantium praesentium autem deleniti eligendi, rem illo, accusamus doloremque facere quo ex facilis veritatis ipsam aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptate natus culpa a doloremque. Accusamus natus explicabo illo odio quod quam perferendis in unde? Facilis, enim! Voluptatem repellat hic dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis eum dolores tenetur qui tempore unde, aliquam molestiae omnis vel quis fugit, quas repellat harum ipsum! Modi neque saepe commodi.</p>
+    </div>
+    <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+    </ul>
+    
+</body>
+</html>

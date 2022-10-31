@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+    background-image: url(img/images.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h2#unico{
+    background-color: aqua;
+}
+p.IMPORTANTES{
+    background-color: salmon;
+    
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var numero= 0 
+        var interval
+
+        function mudar(){
+            interval = setInterval( atualizar =>{
+                let h= document.getElementsByTagName("h1")[0]
+                h.innerHTML += "  " + numero
+                numero++
+            }, 1000);
+        }
+        function parar() {
+            clearInterval(interval)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <input onclick="mudar()" type="button" value="mudar">
+    <input onclick="parar()" type="button" value="parar">
+</body>
+</html>

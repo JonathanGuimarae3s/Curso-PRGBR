@@ -1,0 +1,18 @@
+.btn {
+	background: yellow;
+	width: 50px;
+	padding: 20px;
+	text-align: center;
+	/* transition-property: all ;
+    transition-duration: 500ms;
+    transition-delay:4ms ; */
+	transition: all 1000ms 4ms ease-in-out;
+}
+
+.btn:hover {
+	padding: 40px;
+	background: chartreuse;
+}
+.btn::after {
+	content: "pao";
+}

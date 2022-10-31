@@ -1,0 +1,25 @@
+.container {
+    height:1000px;
+	background-color: darkred;
+	display: grid;
+	padding: 10px;
+
+	grid-template: auto auto / auto auto auto;
+    
+
+    justify-items:flex-end;
+    align-items:flex-start;
+}
+.r1 {
+	background-color: yellow;
+}
+.r2 {
+	background-color: yellowgreen;
+}
+.r3 {
+	background-color: darkgreen;
+}
+.rect {
+	width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        /* positions
+        
+       sticky x fixed
+        
+
+
+       sticky -> O position: sticky; é um híbrido entre o fixed e o relative. O elemento é tratado como relative até alcançar um limite especificado, que é através do top, bottom, left, right. Alcançando esse ponto, ele vai ser tratado como fixo. E assim que chegar a sua posição "original", ele voltará a funcionar como relative.
+
+        */
+        .quadrado{
+            width: 100px;
+            height: 100px;
+        }
+        .quadrado-red{
+            background-color: red;
+            width: 10%;
+            position: sticky;
+         
+        }
+       
+        .quadrado-blue{
+           
+           background-color: blue;
+        }
+        
+        .quadrado-green{
+            background-color: green;
+            
+        }
+        #quadro{
+            position: relative;
+            width: 5000px;
+            height: 4000px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+   
+    <div id="quadro">
+         <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div> <div class="quadrado quadrado-green"></div>
+      
+        
+        
+    
+</body>
+</html>

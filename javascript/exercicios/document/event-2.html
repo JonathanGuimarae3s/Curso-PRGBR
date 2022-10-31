@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos 2</title>
+    
+<style>
+    div{
+        padding:20px;
+        font-size: 2rem;
+        background-color: slateblue;
+        color: turquoise;
+        display: inline-block;
+    }
+</style>
+
+
+<script>
+    function load(){
+        let o = document.getElementById("titulo")
+        o.onclick= peido
+        
+        let p = document.getElementById("subtitulo")
+
+        p.addEventListener("mouseover", queropao)
+        p.addEventListener("mouseout", quero)
+    }
+    function peido(){
+
+        this.innerHTML = "peidei :p"
+        console.log(this)
+    // o this está se referindo ao h1
+
+    }
+    function queropao(){
+
+    this.innerHTML = "eu comi PÃO"
+    console.log(this)
+    // o this está se referindo ao h1
+
+    }
+    function quero(){
+
+    this.innerHTML = "ontem"
+   this.style.backgroundColor = "red"
+   this.style.display = "inline-block"
+
+    }
+
+
+</script>
+</head>
+
+
+
+
+<body onload="load()">
+
+
+    <h1 id="titulo">hoje eu</h1>
+    <h2 id="subtitulo">  ontem  </h2>
+
+</body>
+</html>
